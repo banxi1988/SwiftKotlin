@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E1A5D2A1F01E91000898AD9 /* ImportTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1A5D291F01E91000898AD9 /* ImportTransformer.swift */; };
+		3E1A5D2B1F01E94E00898AD9 /* ImportTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1A5D291F01E91000898AD9 /* ImportTransformer.swift */; };
+		3E1A5D2C1F01E94F00898AD9 /* ImportTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1A5D291F01E91000898AD9 /* ImportTransformer.swift */; };
+		3E1A5D2D1F01E95000898AD9 /* ImportTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1A5D291F01E91000898AD9 /* ImportTransformer.swift */; };
+		3E1A5D2E1F01E95400898AD9 /* ImportTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1A5D291F01E91000898AD9 /* ImportTransformer.swift */; };
+		3E1A5D301F01E9E500898AD9 /* ImportTransformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1A5D2F1F01E9E500898AD9 /* ImportTransformerTests.swift */; };
 		784A9EE91DCA0FEF00FFAE7D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784A9EE81DCA0FEF00FFAE7D /* main.swift */; };
 		784A9EEA1DCA103D00FFAE7D /* NSRangeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A7E5BF1DB9093A00D77182 /* NSRangeExtensions.swift */; };
 		784A9EEB1DCA104200FFAE7D /* ControlFlowTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E279711DC8D8DA002A62BF /* ControlFlowTransformer.swift */; };
@@ -162,6 +168,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3E1A5D291F01E91000898AD9 /* ImportTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportTransformer.swift; sourceTree = "<group>"; };
+		3E1A5D2F1F01E9E500898AD9 /* ImportTransformerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportTransformerTests.swift; sourceTree = "<group>"; };
 		784A9EE01DCA0FB800FFAE7D /* swiftkotlin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swiftkotlin; sourceTree = BUILT_PRODUCTS_DIR; };
 		784A9EE81DCA0FEF00FFAE7D /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		784A9EFB1DCB53FE00FFAE7D /* PropertyTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyTransformer.swift; sourceTree = "<group>"; };
@@ -280,6 +288,7 @@
 				7868A8A51DCC9BA0006F4DDB /* StaticTransformerTests.swift */,
 				787D805E1E2A9C5A0094747C /* StringInterpolatorTransformerTests.swift */,
 				7868A8A61DCC9BA0006F4DDB /* StructTransformerTests.swift */,
+				3E1A5D2F1F01E9E500898AD9 /* ImportTransformerTests.swift */,
 			);
 			path = Transformers;
 			sourceTree = "<group>";
@@ -350,6 +359,7 @@
 				7868A8B81DCCAF28006F4DDB /* StaticTransformer.swift */,
 				787D80601E2A9CDD0094747C /* StringInterpolatorTransformer.swift */,
 				7874964B1DD32DE400FA12AD /* StructTransformer.swift */,
+				3E1A5D291F01E91000898AD9 /* ImportTransformer.swift */,
 			);
 			path = Transformers;
 			sourceTree = "<group>";
@@ -543,7 +553,7 @@
 				TargetAttributes = {
 					784A9EDF1DCA0FB800FFAE7D = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = P6X9Y77ULM;
+						DevelopmentTeam = QQFZ2M2M7Y;
 						ProvisioningStyle = Automatic;
 					};
 					787496521DD3342F00FA12AD = {
@@ -628,6 +638,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E1A5D2C1F01E94F00898AD9 /* ImportTransformer.swift in Sources */,
 				784A9EED1DCA104200FFAE7D /* FunctionParametersTransformer.swift in Sources */,
 				784A9EFE1DCB53FE00FFAE7D /* PropertyTransformer.swift in Sources */,
 				787D805B1E2A9AB50094747C /* FoundationTypeTransformer.swift in Sources */,
@@ -662,6 +673,7 @@
 				787D80641E2A9CE00094747C /* StringInterpolatorTransformer.swift in Sources */,
 				7878597A1DD339700036D592 /* ExtensionTransformer.swift in Sources */,
 				787859881DD339750036D592 /* NSRangeExtensions.swift in Sources */,
+				3E1A5D2D1F01E95000898AD9 /* ImportTransformer.swift in Sources */,
 				787D805C1E2A9AB60094747C /* FoundationTypeTransformer.swift in Sources */,
 				787859761DD339680036D592 /* Tokenizer.swift in Sources */,
 				787496561DD3342F00FA12AD /* AppDelegate.swift in Sources */,
@@ -681,6 +693,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E1A5D2E1F01E95400898AD9 /* ImportTransformer.swift in Sources */,
 				787859771DD339680036D592 /* Formatter.swift in Sources */,
 				7878598C1DD339760036D592 /* TokenizerExtensions.swift in Sources */,
 				787D805D1E2A9AB70094747C /* FoundationTypeTransformer.swift in Sources */,
@@ -718,6 +731,7 @@
 				7868A8961DCC8AD0006F4DDB /* FormatterExtensions.swift in Sources */,
 				7868A8921DCC8A49006F4DDB /* Formatter.swift in Sources */,
 				7868A8B51DCCAABC006F4DDB /* ExtensionTransformer.swift in Sources */,
+				3E1A5D2A1F01E91000898AD9 /* ImportTransformer.swift in Sources */,
 				78A7E5BA1DB8FBC300D77182 /* FunctionParametersTransformer.swift in Sources */,
 				787D80591E2A99B90094747C /* FoundationTypeTransformer.swift in Sources */,
 				FCDB55BD1EC81BF000195B26 /* TransformOptions.swift in Sources */,
@@ -747,10 +761,12 @@
 				787D80621E2A9CDF0094747C /* StringInterpolatorTransformer.swift in Sources */,
 				787D805A1E2A9AB50094747C /* FoundationTypeTransformer.swift in Sources */,
 				78CC67EA1DC8B39C0039511C /* Tokenizer.swift in Sources */,
+				3E1A5D2B1F01E94E00898AD9 /* ImportTransformer.swift in Sources */,
 				78F032D91D86C15400BE709A /* SwiftKotlinFrameworkTests.swift in Sources */,
 				7868A89B1DCC920C006F4DDB /* TokenizerExtensions.swift in Sources */,
 				7868A8AB1DCC9BA0006F4DDB /* MemoryManagementTransformerTests.swift in Sources */,
 				784A9EFD1DCB53FE00FFAE7D /* PropertyTransformer.swift in Sources */,
+				3E1A5D301F01E9E500898AD9 /* ImportTransformerTests.swift in Sources */,
 				FCE34AFD1EB74B9200681164 /* ConstructorTransformer.swift in Sources */,
 				78A7E5C11DB9093A00D77182 /* NSRangeExtensions.swift in Sources */,
 				7868A8B11DCC9C66006F4DDB /* StringDifference.swift in Sources */,
@@ -803,7 +819,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				DEVELOPMENT_TEAM = P6X9Y77ULM;
+				DEVELOPMENT_TEAM = QQFZ2M2M7Y;
 				PRODUCT_MODULE_NAME = swiftKotlinCommand;
 				PRODUCT_NAME = swiftkotlin;
 				SWIFT_VERSION = 3.0;
@@ -817,7 +833,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				DEVELOPMENT_TEAM = P6X9Y77ULM;
+				DEVELOPMENT_TEAM = QQFZ2M2M7Y;
 				PRODUCT_MODULE_NAME = swiftKotlinCommand;
 				PRODUCT_NAME = swiftkotlin;
 				SWIFT_VERSION = 3.0;
