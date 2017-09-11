@@ -18,6 +18,10 @@ class FoundationTypeTransformer: Transformer {
         formatter.forEachToken(where: {$0 == .identifier("Any") || $0 == .identifier("AnyObject")}) { (i, token) in
             formatter.replaceToken(at: i, with: .identifier("Object"))
         }
+
+      formatter.forEach(.identifier("Bool")){ (i,token) in
+        formatter.replaceToken(at: i, with: .identifier("Boolean"))
+      }
     }
     
 }

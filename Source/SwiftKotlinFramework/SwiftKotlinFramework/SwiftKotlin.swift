@@ -22,6 +22,7 @@ class SwiftKotlin {
     convenience init() {
         self.init(transformers: [
                 ConditionalCompilationTransformer(),
+                RemoveCustomFunctionTransformer(),
                 FunctionParametersTransformer(),
                 ConstructorTransformer(), 
                 ControlFlowTransformer(),
@@ -32,7 +33,9 @@ class SwiftKotlin {
                 StringInterpolatorTransformer(),
                 KeywordReplacementTransformer(),
                 FoundationTypeTransformer(),
-                ImportTransformer()
+                RemoveImportTransformer(),
+                AddPackageTransformer(),
+                CustomTypeTransformer()
         ])
     }
     

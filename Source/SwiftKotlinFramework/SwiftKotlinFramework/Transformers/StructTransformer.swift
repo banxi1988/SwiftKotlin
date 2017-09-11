@@ -17,7 +17,34 @@ class StructTransformer: Transformer {
                     .keyword("data"),
                     .space(" "),
                 ], at: i)
+              guard let bodyRange = formatter.nextBlockScope(after: i) else{
+                return
+              }
+              formatter.replaceToken(at: bodyRange.lowerBound, with: .startOfScope("("))
+              formatter.replaceToken(at: bodyRange.upperBound, with: .startOfScope(")"))
+              var nextStartIndex  = bodyRange.lowerBound + 1
+              while true{
+                if let varIndex = formatter.indexVariableToken(after: nextStartIndex){
+                  if let brIndex = formatter.index(of: .linebreak, after: varIndex){
+                    formatter.insertToken(.delimiter(","), at: brIndex)
+                    nextStartIndex = brIndex + 1
+                  }else{
+                    break
+                  }
+                }else{
+                  break
+                }
+              }
             }
         }
     }
+}
+
+extension Formatter{
+  func indexVariableToken(after index:Int) -> Int?{
+    return self.index(after: index){ (token) -> Bool in
+       return token.isKeyword && (token.string == "var" || token.string == "let")
+    }
+
+  }
 }

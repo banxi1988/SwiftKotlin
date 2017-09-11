@@ -24,13 +24,12 @@ class StructTransformerTests: XCTestCase {
 
     func testsStructBecomesDataClass() {
         let swift =
-            "struct A {\n" +
+            "struct A{\n" +
                 "\tvar myBool = true\n" +
+                "\tvar myInt = 1\n" +
             "}"
         let kotlin =
-            "data class A {\n" +
-                "\tvar myBool = true\n" +
-            "}"
+            "data class A(\n\tvar myBool = true,\n\tvar myInt = 1,\n)" 
         let translate = try? transformer.translate(content: swift)
         AssertTranslateEquals(translate, kotlin)
     }

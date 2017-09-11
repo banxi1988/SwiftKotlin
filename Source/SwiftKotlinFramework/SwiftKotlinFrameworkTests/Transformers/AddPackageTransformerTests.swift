@@ -1,21 +1,19 @@
 //
-//  ImportTransformerTests.swift
+//  AddPackageTransformerTests.swift
 //  SwiftKotlinFramework
 //
 //  Created by Haizhen Lee on 27/06/2017.
 //  Copyright © 2017 Angel G. Olloqui. All rights reserved.
 //
 
-import Foundation
-
 import XCTest
 
-class ImportTransformerTests: XCTestCase {
-  var transformer: ImportTransformer!
+class AddPackageTransformerTests: XCTestCase {
+  var transformer: AddPackageTransformer!
 
   override func setUp() {
     super.setUp()
-    transformer = ImportTransformer()
+    transformer = AddPackageTransformer()
   }
 
 
@@ -25,13 +23,10 @@ class ImportTransformerTests: XCTestCase {
   }
 
   func testsRemoveImports() {
-    let swift =
-      "import Foundation\n" +
-      "import UIKit\n"
-    let kotlin = ""
+    let swift = ""
+    let kotlin = "package com.xypuke.gamemodels\n"
     let translate = try? transformer.translate(content: swift)
     AssertTranslateEquals(translate, kotlin)
   }
-
 
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ImportTransformer:Transformer{
+class RemoveImportTransformer:Transformer{
   func transform(formatter: Formatter, options: TransformOptions?) throws {
     formatter.forEachToken{ (index, token) in
       if token == .keyword("import"){
